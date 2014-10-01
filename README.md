@@ -7,4 +7,4 @@ Original developer Mark Kaplan (30-Jul-2006 )
 
 # New in version 2.0 (01 October 2014)
 
-* New Universal Analytics code (old code option still available in plugin configuration)
+* New **Universal Analytics** code (old code option still available in plugin configuration)
