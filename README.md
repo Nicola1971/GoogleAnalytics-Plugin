@@ -14,3 +14,5 @@ Original developer Mark Kaplan (30-Jul-2006 )
 1.9 - New Option to change code type (UniversalAnalytics/GoogleAnalytics)
 
 1.8 - New Google Universal Analitycs code
+
+![plugin conf](https://raw.githubusercontent.com/Nicola1971/training-materials/master/Images/analytics/plugin-conf.jpg)
