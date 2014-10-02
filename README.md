@@ -7,7 +7,7 @@ Original developer Mark Kaplan (30-Jul-2006 )
 
 # New in version 2.0 (01 October 2014)
  
-/* CHANGELOG
+### CHANGELOG
 
 2.0 - New Code position parameter (choose js position : before closing head tag or before closing body tag
 
