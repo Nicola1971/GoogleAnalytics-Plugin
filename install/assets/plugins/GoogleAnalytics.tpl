@@ -68,7 +68,7 @@
 
 2. Copy this line into the Plugin Configuration of the Configuration tab:
 
-&account=Account;string;UA-000000-0 &testMode=Test Mode;list;true,false;false &trackingNameTV=Alt tracking URL TV name;string; &trackingNamePH=Alt tracking URL placeholder name;string;&extraJs=Chunk containing extra JS;string;
+&account=Account;string;UA-000000-0 &testMode=Test Mode;list;true,false;false &trackingNameTV=Alt tracking URL TV name;string; &trackingNamePH=Alt tracking URL placeholder name;string;&extraJs=Chunk containing extra JS;string; &codetype=Analytics code;list;UniversalAnalytics,GoogleAnalytics;UniversalAnalytics &codePosition=Place the analitycs code before closing tag;list;head,body;body
 
 3. Enter your Google Account details on the configuration tab
 
@@ -85,12 +85,14 @@
 Once installed, you don't need to do anything else - all HTML pages which have the "Enable Stats Tracking" box ticked in Manager will automatically have the code inserted.
 
 PARAMETERS (set in configuration tab)
-&codetype=Analytics js code type: new Universal Analytics or old GoogleAnalytics code
+
 account = Google Analytics tracking code, which looks like UA-000000-0
 testMode = boolean - if true, do not send tracking data to Google. Code is outputted as comments, useful for debugging
 trackingNameTV = see ALTERNATIVE TRACKING NAMES
 trackingNamePH = see ALTERNATIVE TRACKING NAMES
 extraJs = name of a chunk containing extra JS, which is inserted into the Google tracking code before the page view is recorded, if you wish to take advantage of GA's custom tracking features
+codetype=Analytics js code type: new Universal Analytics or old GoogleAnalytics code
+codePosition = choose js position : before closing head tag or before closing body tag (suggested)
 
 ALTERNATIVE TRACKING NAMES
 By default, Google will track the pages based on their [friendly] URL. Sometimes you may want to tell Analytics to report alternative tracking names.
@@ -111,7 +113,7 @@ $account = isset($account) && $account != 'UA-000000-0' ? $account : ''; // Igno
 $testMode = isset($testMode) && ($testMode == 'true') ? true: false;
 $extraJs = isset($extraJs) ? $modx->evalSnippets($modx->mergePlaceholderContent($modx->getChunk($extraJs))) : '';
 $codetype = isset($codetype)? $codetype: 'UniversalAnalytics';
-$codePosition = isset($codetype)? $codetype: 'body';
+$codePosition = isset($codePosition)? $codePosition: 'body';
 
 // Tracking name - is it from a placeholder or a template variable?
 $trackingName_value = '';
