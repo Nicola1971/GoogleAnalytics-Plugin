@@ -16,6 +16,7 @@
 
 /*
 // <?php
+/*
 * GoogleAnalytics Plugin
 * version 2.0
 * author: Nicola Lambathakis 01 October 2014 * Original developer Mark Kaplan (30-Jul-2006 )
