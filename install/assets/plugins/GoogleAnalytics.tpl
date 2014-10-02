@@ -9,6 +9,7 @@
  * @version    2.0 PL
  * @license	 http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
  * @internal    @events OnWebPagePrerender
+ * @internal    @disabled 1
  * @internal    @installset base
  * @internal    @modx_category Seo4Evo
  * @internal    @properties  &account=Account;string;UA-000000-0 &codetype=Analytics code;list;UniversalAnalytics,OldAnalyticsCode;UniversalAnalytics
