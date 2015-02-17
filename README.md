@@ -1,4 +1,4 @@
-GoogleAnalytics Plugin for MODX Evolution v. 2.0
+GoogleAnalytics Plugin for MODX Evolution v. 2.0.1
 ======================
 
 Adds Google Analytics code to every page in MODX Evolution
