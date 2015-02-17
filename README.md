@@ -9,6 +9,8 @@ Original developer Mark Kaplan (30-Jul-2006 )
  
 ### CHANGELOG
 
+2.0.1 - Fix for UniversalAnalytics
+
 2.0 - New Code position parameter (choose js position : before closing head tag or before closing body tag
 
 1.9 - New Option to change code type (UniversalAnalytics/GoogleAnalytics)
